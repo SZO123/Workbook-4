@@ -25,13 +25,13 @@ public class Main {
         emp1.punchIn(15.25);
         emp1.punchOut(18.0);
 
-        // ---- HOTEL TEST ----
+
         Hotel hotel = new Hotel("BlueSky Inn", 5, 10);
         System.out.println("\nAvailable suites: " + hotel.getAvailableSuites());
         System.out.println("Available rooms: " + hotel.getAvailableRooms());
 
-        hotel.bookRoom(2, true);   // Book 2 suites
-        hotel.bookRoom(3, false);  // Book 3 basic rooms
+        hotel.bookRoom(2, true);
+        hotel.bookRoom(3, false);
 
         System.out.println("Suites left: " + hotel.getAvailableSuites());
         System.out.println("Rooms left: " + hotel.getAvailableRooms());
